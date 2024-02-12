@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: #ece5d3;
+  font-size: 0.875rem;
+  color: #33312e;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+/* Index Componentの段組みに使用 */
+._drop-cap:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  margin-right: 0.1em;
+}
+._square-outline {
+  width: 200px;
+  height: 200px;
+}
