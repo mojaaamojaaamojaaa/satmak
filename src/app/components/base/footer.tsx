@@ -24,14 +24,12 @@ const Footer = () => {
           © {currentYear} satmak
         </div>
         <div className=" flex mb-2 md:mb-0 ">
-          <Link href="https://krasick.vercel.app" target="blank">
-            <Image
-              src="https://res.cloudinary.com/dgcbaydpp/image/upload/v1707534641/mojabassoonIcon_au7ieo.png"
-              width={40}
-              height={40}
-              alt="Moja Logo"
-            />
-          </Link>
+          <Image
+            src="https://res.cloudinary.com/dgcbaydpp/image/upload/v1707534641/mojabassoonIcon_au7ieo.png"
+            width={40}
+            height={40}
+            alt="Moja Logo"
+          />
         </div>
         <div className="flex space-x-4 ">
           <Link
