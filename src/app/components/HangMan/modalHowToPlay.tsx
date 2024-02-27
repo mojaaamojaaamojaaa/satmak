@@ -14,7 +14,7 @@ const ModalHowToPlay = () => {
         setIsOpen(false);
       }
     };
-    //modal要素を表示中スクロールが出来ない
+    //modal要素を表示中スクロールが出来ないようにする。
     if (isOpen) {
       document.body.style.overflow = "hidden";
       window.addEventListener("mousedown", handleClickOutside);

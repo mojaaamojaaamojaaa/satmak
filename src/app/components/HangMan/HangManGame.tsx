@@ -127,7 +127,7 @@ export default function HangManGame() {
 
   return (
     <div className=" flex-col  justify-center items-center space-y-6 ">
-      {/* start game か end gameによってボタンの文字と処理が変化*/}
+      {/*start game か end gameによってボタンの文字と処理が変化*/}
       <div className="mt-5 text-center">
         {!isGameStarted ? (
           <button

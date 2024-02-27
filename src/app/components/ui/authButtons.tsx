@@ -1,6 +1,6 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
-
+//未使用。将来使うかも？
 const AuthButtons = () => {
   const { data: session } = useSession();
   return (

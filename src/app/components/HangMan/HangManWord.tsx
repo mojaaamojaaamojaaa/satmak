@@ -5,10 +5,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 //入力した文字を表示する部分のComponent
 //HangManGameから渡される引数の型の定義
 type HangManWordProps = {
-  guessedLetters: string[];
-  wordToGuess: string;
+  guessedLetters: string[]; //正解の文字を入れる為の配列
+  wordToGuess: string; //正解の単語の設定。
   reveal?: boolean; //６回間違えた場合isLoseの結果がTrueに変化し、revealもTrueになる）
-  win?: boolean;
+  win?: boolean; //isWinの判定
 };
 
 export function HangManWord({
@@ -17,8 +17,8 @@ export function HangManWord({
   reveal = false,
   win = false,
 }: HangManWordProps) {
-  const [copied, setCopied] = useState(false); //ボタン操作でclipboardに単語をコピーする機能の実装 npmのCopyToClipboardを利用
-  const [textToCopy, setTextCopy] = useState("");
+  const [copied, setCopied] = useState(false); //ボタン操作でclipboardに単語をコピーする機能の実装 copiedがtrueになった時にボタンの文字を変化させる。
+  const [textToCopy, setTextCopy] = useState(""); //ボタン操作でclipboardに単語をコピーする機能の実装 npmのCopyToClipboardを利用
   useEffect(() => {
     //div要素のtextContentを取得
     const divElement = document.getElementById("wordDiv") as HTMLDivElement; //表示されたwordToGuessをコピー

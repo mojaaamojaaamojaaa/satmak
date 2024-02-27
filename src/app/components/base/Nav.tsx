@@ -45,7 +45,7 @@ const Nav = () => {
     };
   }, [isOpen, menuRef, handleToggleMenu]);
 
-  const SlideMenuButton: React.FC = () => (
+  const SlideMenuButton = () => (
     //slideMenuを開くボタン
     <MyButton
       onClick={() => handleToggleMenu()}
@@ -57,7 +57,7 @@ const Nav = () => {
   //isOpenを基にどちらのanimationコンポーネントを適用するか判断する
   const SlideAnimationComponent = isOpen ? FadeOut : FadeIn;
 
-  const CancelButton: React.FC = () => (
+  const CancelButton = () => (
     //slideMenu内のcancelButton
     <MyButton onClick={() => handleToggleMenu()} className="_cancelButton">
       <FontAwesomeIcon

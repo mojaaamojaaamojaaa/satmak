@@ -32,7 +32,7 @@ export default function Contact() {
     // 空欄がないかをチェック
     if (!formData.name || !formData.email || !formData.message) {
       alert("項目に入力をお願いします。");
-      return; // Exit the function if validation fails
+      return;
     }
 
     // Email欄に@があるかチェック

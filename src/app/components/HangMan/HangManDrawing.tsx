@@ -82,7 +82,7 @@ const LEFT_LEG = (
     }}
   />
 );
-const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
+const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG]; //配列で
 
 //HangManGame.tsxのincorrectLetters.lengthの数(入力を間違えた回数)
 type HangManDrawingProps = {
@@ -92,7 +92,7 @@ type HangManDrawingProps = {
 export function HangManDrawing({ numberOfGuesses }: HangManDrawingProps) {
   return (
     <div className="relative">
-      {/*ハングマンのBODY_PARTSを順に表示していく為の処理*/}
+      {/*ハングマンのBODY_PARTSをsliceで制御しながら表示する*/}
       {BODY_PARTS.slice(0, numberOfGuesses)}
       {/*以下全てハングマンの吊り台の描画の為のCSS。見た目いじる以外は編集不要*/}
       <div
