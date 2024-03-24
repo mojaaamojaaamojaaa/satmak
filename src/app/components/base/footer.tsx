@@ -31,20 +31,6 @@ const Footer = () => {
             alt="Moja Logo"
           />
         </div>
-        <div className="flex space-x-4 ">
-          <Link
-            href="https://www.youtube.com/channel/UCc1M3xcBBL8BofSsQaX16sg"
-            target="blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              className="w-6 mr-4 text-3xl text-red "
-            />
-          </Link>
-          <Link href="https://twitter.com/makotobassoon" target="blank">
-            <FontAwesomeIcon icon={faXTwitter} className="w-6 text-3xl " />
-          </Link>
-        </div>
       </div>
     </footer>
   );

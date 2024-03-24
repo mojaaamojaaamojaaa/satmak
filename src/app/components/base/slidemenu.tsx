@@ -27,20 +27,6 @@ const SlideMenu = () => {
                 <NavLinks onLinkClick={() => handleToggleMenu()} />
               </ul>
             </div>
-            {/*Logo Area*/}
-            <div className="flex justify-center text-4xl my-5  md:my-20 lg:my-48">
-              <Link
-                href={
-                  "https://www.youtube.com/channel/UCulME1KPy5ul3eg6S4sAs4w"
-                }
-                target="blank"
-              >
-                <FontAwesomeIcon icon={faYoutube} className="mr-10 text-red" />
-              </Link>
-              <Link href={"https://twitter.com/CMusicJunkies "} target="blank">
-                <FontAwesomeIcon icon={faXTwitter} className="text-slate-300" />
-              </Link>
-            </div>
           </FadeIn>
         </div>
       )}

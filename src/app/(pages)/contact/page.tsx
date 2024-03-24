@@ -33,40 +33,6 @@ export default function Page() {
         <div className="my-16  mx-4 md:mx-24 lg:mx-32  xl:mx-40 2xl:mx-48  justify-center ">
           <p>Thank you for reaching out to me.</p>
           <p>Feel free to contact me via social media as well.</p>
-          <p className="mt-2">Social Media:</p>
-          <p>
-            Dont forget to follow me on social media for all the latest updates,
-            behind-the-scenes looks, and more:
-          </p>
-          <div className="mt-2 underline ">
-            <Link href={"https://twitter.com/makotobassoon"} target="blank">
-              Twitter
-            </Link>
-          </div>
-          <div className="underline">
-            <Link
-              href={"https://www.instagram.com/mojaamojaaamojaaaa/"}
-              target="blank"
-            >
-              Instagram
-            </Link>
-          </div>
-          <div className="underline">
-            <Link
-              href={"https://www.youtube.com/channel/UCc1M3xcBBL8BofSsQaX16sg"}
-              target="blank"
-            >
-              YouTube
-            </Link>
-          </div>
-          <div className="underline">
-            <Link
-              href={"https://bsky.app/profile/mojabasoon.bsky.social"}
-              target="blank"
-            >
-              bluesky
-            </Link>
-          </div>
           <p className="mt-2">Im looking forward to hearing from you!</p>
         </div>
       </FadeIn>

@@ -1,13 +1,14 @@
 import FadeIn from "./components/animation/FadeIn";
 import Image from "next/image";
 import Index from "./components";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <FadeIn duration={2}>
       <div className="  relative min-h-screen overflow-hidden">
         <div className="text-3xl m-5 text-red  ">
-          <span>sat mak</span>
+          <span>sato makoto</span>
         </div>
         <div className=" my-5 flex justify-center items-center">
           <div className="flex justify-center items-center ">
@@ -22,14 +23,21 @@ export default function Home() {
             />
           </div>
           <div className="flex-col  justify-center mx-10 ">
-            <p className="text-2xl text-red ">Makoto Sato</p>
-            <p className="text-lg text-green ">Basoonist</p>
-            <p className="text-lg text-black">Composer</p>
-            <p className="text-lg text-green">Keyboardist</p>
+            <p className="text-2xl text-red ">佐藤諒</p>
+            <p className="text-lg text-green ">
+              ポートフォリオサイトとして作成しました。
+            </p>
+            <p className="text-lg text-black">
+              制作物はGithubにコードを載せています。
+            </p>
+            <Link
+              href="https://github.com/mojaaamojaaamojaaa"
+              className="text-lg text-green"
+              target="blank"
+            >
+              https://github.com/mojaaamojaaamojaaa
+            </Link>
           </div>
-        </div>
-        <div className="mx-5 mb-5 ">
-          <Index />
         </div>
       </div>
     </FadeIn>

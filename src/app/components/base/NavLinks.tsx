@@ -4,7 +4,6 @@ import FadeIn from "../animation/FadeIn";
 const links = [
   { name: "PROFILE", href: "/profile" },
   { name: "WORKS", href: "/works" },
-  { name: "ARCHIVE", href: "/archive" },
   { name: "SPECIAL", href: "/special" },
   { name: "CONTACT", href: "/contact" },
 ];

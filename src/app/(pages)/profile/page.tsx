@@ -29,7 +29,7 @@ export default function Page() {
               </FadeIn>
               <FadeIn delay={2.1} x={30}>
                 <p className="text-red">Handle Name:</p>
-                <p className="mb-2 ">moja</p>
+                <p className="mb-2 ">satmak</p>
               </FadeIn>
               <FadeIn delay={2.2} x={35}>
                 <p className="text-yellow ">From:</p>
@@ -41,46 +41,12 @@ export default function Page() {
               </FadeIn>
               <FadeIn delay={2.6} x={45}>
                 <p className="text-blue ">Like:</p>
-                <p className=" ">Shostakovich</p>
-                <p className=" ">Entartete Musik</p>
+                <p className=" ">Compose music</p>
                 <p className="mb-2 ">Internet Culture</p>
-              </FadeIn>
-              <FadeIn delay={2.9} x={50}>
-                <p className="text-gray ">Genre:</p>
-                <p className=" ">Contemporary</p>
-                <p className=" ">Chamber Rock</p>
-                <p className=" ">Free Improvisation</p>
               </FadeIn>
             </div>
           </div>
         </div>
-        <FadeIn y={10} duration={2} delay={3.2}>
-          <div className="flex justify-center items-center pb-20 text-4xl">
-            <div className="mr-5">
-              <Link href={"https://twitter.com/makotobassoon"} target="blank">
-                <FontAwesomeIcon icon={faXTwitter} />
-              </Link>
-            </div>
-            <div className="mr-5">
-              <Link
-                href={"https://www.instagram.com/mojaamojaaamojaaaa/"}
-                target="blank"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </Link>
-            </div>
-            <div className="">
-              <Link
-                href={
-                  "https://www.youtube.com/channel/UCc1M3xcBBL8BofSsQaX16sg"
-                }
-                target="blank"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </Link>
-            </div>
-          </div>
-        </FadeIn>
       </div>
     </FadeIn>
   );
